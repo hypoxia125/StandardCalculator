@@ -1,0 +1,576 @@
+OverlayWidgetClass {
+ Name "Calculator"
+ Slot FrameWidgetSlot "{64AE3B2334EB16B5}" {
+  Anchor 0 0 50 0
+  PositionX 0
+  OffsetLeft 0
+  PositionY 0
+  OffsetTop 0
+  SizeX -15680
+  OffsetRight 15680
+  SizeY 508
+  OffsetBottom -508
+ }
+ {
+  OverlayWidgetClass "{64AF3932F85135E9}" {
+   Name "FrameColor"
+   Slot OverlayWidgetSlot {
+   }
+   {
+    ImageWidgetClass "{64AF3932FACF861F}" {
+     Name "Color0"
+     Slot OverlayWidgetSlot "{64AE3B37EB43D5FC}" {
+     }
+     Color 0.502 0.376 0 1
+     Size 330 518
+    }
+   }
+  }
+  OverlayWidgetClass "{64AB1CF5C7238D30}" {
+   Name "Background"
+   Slot OverlayWidgetSlot "{64AF3933E681F17F}" {
+   }
+   {
+    ImageWidgetClass "{64AB1CF7461D9340}" {
+     Name "Color"
+     Slot OverlayWidgetSlot "{64AE3B37EB43D5FC}" {
+     }
+     Color 0.019 0.019 0.019 1
+     Size 320 508
+    }
+   }
+  }
+  SizeLayoutWidgetClass "{64AB1CF7D6106525}" {
+   Name "SizeLayout0"
+   Slot OverlayWidgetSlot "{64AF3933E681F1B8}" {
+   }
+   AllowWidthOverride 1
+   WidthOverride 320
+   AllowHeightOverride 1
+   HeightOverride 508
+   {
+    VerticalLayoutWidgetClass "{64AB1CF6A05074DA}" {
+     Name "VerticalLayout0"
+     Slot AlignableSlot "{64AB1CF6A0507521}" {
+     }
+     {
+      SizeLayoutWidgetClass "{64AE3B37E600CA0C}" {
+       Name "TopBarSize"
+       Slot LayoutSlot "{64AE3B37E600CA6E}" {
+       }
+       AllowWidthOverride 1
+       WidthOverride 320
+       HeightOverride 32
+       {
+        HorizontalLayoutWidgetClass "{64AB1CF689E8E2F3}" {
+         Name "TopBar"
+         Slot AlignableSlot "{64AE3B37E6F3129C}" {
+         }
+         {
+          TextWidgetClass "{64AE3B26F8964C28}" : "{6F198A46CBC549CE}UI/layouts/WidgetLibrary/TextWidgets/Text_Heading1.layout" {
+           Name "Title"
+           Slot LayoutSlot "{64AE3B26F8964C3B}" {
+           }
+           Text "Calculator"
+           "Font Size" 24
+           "Min Font Size" 24
+           "Horizontal Alignment" Center
+           "Vertical Alignment" Center
+          }
+         }
+        }
+       }
+      }
+      ImageWidgetClass "{64AE3B244E9A3E88}" {
+       Name "LineBreak0"
+       Slot LayoutSlot "{64AE3B244E9A3EEB}" {
+        Padding 0 2 0 0
+       }
+       Size 320 2
+      }
+      SizeLayoutWidgetClass "{64AE3B358BF02618}" {
+       Name "OutputBarSize"
+       Slot LayoutSlot "{64AE3B358BF02673}" {
+        Padding 10 2 10 0
+       }
+       AllowWidthOverride 1
+       WidthOverride 320
+       AllowHeightOverride 1
+       HeightOverride 100
+       {
+        TextWidgetClass "{64AE3B356DFE64B2}" {
+         Name "Output"
+         Slot AlignableSlot "{64AE3B356DFE6486}" {
+          HorizontalAlign 2
+         }
+         Text "Output"
+        }
+       }
+      }
+      ImageWidgetClass "{64AE3B242A86EE3B}" {
+       Name "LineBreak1"
+       Slot LayoutSlot "{64AE3B244E9A3EEB}" {
+        Padding 0 2 0 0
+       }
+       Size 320 2
+      }
+      SizeLayoutWidgetClass "{64AE3B3552539A10}" {
+       Name "MemoryBarSize"
+       Slot LayoutSlot "{64AE3B3552539A7C}" {
+        HorizontalAlign 1
+        VerticalAlign 1
+        Padding 0 2 0 0
+       }
+       AllowWidthOverride 1
+       WidthOverride 320
+       AllowHeightOverride 1
+       HeightOverride 50
+       {
+        HorizontalLayoutWidgetClass "{64AE3B352BADAA10}" {
+         Name "MemoryBar"
+         Slot AlignableSlot "{64AE3B352BADAA7A}" {
+          Padding 5 0 5 0
+         }
+         {
+          ButtonWidgetClass "{64AE3B3BB99D84CB}" : "{75C912A1C89BE6C2}UI/layouts/WidgetLibrary/Buttons/WLib_ButtonText.layout" {
+           Name "MC"
+           Slot LayoutSlot "{64AE3B3BB99D84DB}" {
+            FillWeight 1
+           }
+           components {
+            SCR_ButtonTextComponent "{5548F0143AE99095}" {
+             m_sText "MC"
+            }
+           }
+           {
+            SizeLayoutWidgetClass "{5548EB41A8E48247}" {
+             Prefab "{5548EB41A8E48247}"
+             Slot ButtonWidgetSlot "{5548E6E7E6AEDDC1}" {
+             }
+             AllowWidthOverride 1
+             WidthOverride 60
+            }
+           }
+          }
+          ButtonWidgetClass "{64AE3B3B8BEF401B}" : "{75C912A1C89BE6C2}UI/layouts/WidgetLibrary/Buttons/WLib_ButtonText.layout" {
+           Name "MR"
+           Slot LayoutSlot "{64AE3B3BB99D84DB}" {
+           }
+           components {
+            SCR_ButtonTextComponent "{5548F0143AE99095}" {
+             m_sText "MR"
+            }
+           }
+           {
+            SizeLayoutWidgetClass "{5548EB41A8E48247}" {
+             Prefab "{5548EB41A8E48247}"
+             AllowWidthOverride 1
+             WidthOverride 60
+            }
+           }
+          }
+          ButtonWidgetClass "{64AE3B3B8F32F4E7}" : "{75C912A1C89BE6C2}UI/layouts/WidgetLibrary/Buttons/WLib_ButtonText.layout" {
+           Name "M+"
+           Slot LayoutSlot "{64AE3B3BB99D84DB}" {
+           }
+           components {
+            SCR_ButtonTextComponent "{5548F0143AE99095}" {
+             m_sText "M+"
+            }
+           }
+           {
+            SizeLayoutWidgetClass "{5548EB41A8E48247}" {
+             Prefab "{5548EB41A8E48247}"
+             AllowWidthOverride 1
+             WidthOverride 60
+            }
+           }
+          }
+          ButtonWidgetClass "{64AE3B3B81C9B56C}" : "{75C912A1C89BE6C2}UI/layouts/WidgetLibrary/Buttons/WLib_ButtonText.layout" {
+           Name "M-"
+           Slot LayoutSlot "{64AE3B3BB99D84DB}" {
+           }
+           components {
+            SCR_ButtonTextComponent "{5548F0143AE99095}" {
+             m_sText "M-"
+            }
+           }
+           {
+            SizeLayoutWidgetClass "{5548EB41A8E48247}" {
+             Prefab "{5548EB41A8E48247}"
+             AllowWidthOverride 1
+             WidthOverride 60
+            }
+           }
+          }
+          ButtonWidgetClass "{64AE3B3B84A77E57}" : "{75C912A1C89BE6C2}UI/layouts/WidgetLibrary/Buttons/WLib_ButtonText.layout" {
+           Name "MS"
+           Slot LayoutSlot "{64AE3B3BB99D84DB}" {
+           }
+           components {
+            SCR_ButtonTextComponent "{5548F0143AE99095}" {
+             m_sText "MS"
+            }
+           }
+           {
+            SizeLayoutWidgetClass "{5548EB41A8E48247}" {
+             Prefab "{5548EB41A8E48247}"
+             AllowWidthOverride 1
+             WidthOverride 60
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+      ImageWidgetClass "{64AE3B242DEC7253}" {
+       Name "LineBreak2"
+       Slot LayoutSlot "{64AE3B244E9A3EEB}" {
+        Padding 0 2 0 0
+       }
+       Size 320 2
+      }
+      SizeLayoutWidgetClass "{64AE3B24FF051666}" {
+       Name "KeypadGridSize"
+       Slot LayoutSlot "{64AE3B24FF051641}" {
+        Padding 0 2 0 0
+       }
+       AllowHeightOverride 1
+       HeightOverride 225
+       {
+        GridLayoutWidgetClass "{64AE3B34F726B79A}" {
+         Name "KeypadGrid"
+         Slot AlignableSlot "{64AE3B24CB688E88}" {
+          HorizontalAlign 1
+          VerticalAlign 1
+          Padding 5 0 5 0
+         }
+         RowFill {
+          0 0 0 0 0 0
+         }
+         ColumnFill {
+          1 1 1 1
+         }
+         {
+          ButtonWidgetClass "{64AE3B3B66D1782F}" : "{75C912A1C89BE6C2}UI/layouts/WidgetLibrary/Buttons/WLib_ButtonText.layout" {
+           Name "Button[0,0]"
+           Slot GridWidgetSlot "{64AE3B3B66D17830}" {
+           }
+           components {
+            SCR_ButtonTextComponent "{5548F0143AE99095}" {
+             m_sText "%"
+            }
+           }
+           {
+            SizeLayoutWidgetClass "{5548EB41A8E48247}" {
+             Prefab "{5548EB41A8E48247}"
+             HeightOverride 25
+            }
+           }
+          }
+          ButtonWidgetClass "{64AE3B3B425AE651}" : "{75C912A1C89BE6C2}UI/layouts/WidgetLibrary/Buttons/WLib_ButtonText.layout" {
+           Name "Button[0,1]"
+           Slot GridWidgetSlot "{64AE3B3B66D17830}" {
+            Column 1
+           }
+           components {
+            SCR_ButtonTextComponent "{5548F0143AE99095}" {
+             m_sText "CE"
+            }
+           }
+          }
+          ButtonWidgetClass "{64AE3B3B308B176B}" : "{75C912A1C89BE6C2}UI/layouts/WidgetLibrary/Buttons/WLib_ButtonText.layout" {
+           Name "Button[0,2]"
+           Slot GridWidgetSlot "{64AE3B3B66D17830}" {
+            Column 2
+           }
+           components {
+            SCR_ButtonTextComponent "{5548F0143AE99095}" {
+             m_sText "C"
+            }
+           }
+          }
+          ButtonWidgetClass "{64AE3B3B0A8BAAB3}" : "{75C912A1C89BE6C2}UI/layouts/WidgetLibrary/Buttons/WLib_ButtonText.layout" {
+           Name "Button[0,3]"
+           Slot GridWidgetSlot "{64AE3B3B66D17830}" {
+            Column 3
+           }
+           components {
+            SCR_ButtonTextComponent "{5548F0143AE99095}" {
+             m_sText "BACK"
+            }
+           }
+          }
+          ButtonWidgetClass "{64AE3B3B19FB6782}" : "{75C912A1C89BE6C2}UI/layouts/WidgetLibrary/Buttons/WLib_ButtonText.layout" {
+           Name "Button[1,0]"
+           Slot GridWidgetSlot "{64AE3B3B66D17830}" {
+            Row 1
+           }
+           components {
+            SCR_ButtonTextComponent "{5548F0143AE99095}" {
+            }
+           }
+           {
+            SizeLayoutWidgetClass "{5548EB41A8E48247}" {
+             Prefab "{5548EB41A8E48247}"
+             HeightOverride 25
+            }
+           }
+          }
+          ButtonWidgetClass "{64AE3B3B17646680}" : "{75C912A1C89BE6C2}UI/layouts/WidgetLibrary/Buttons/WLib_ButtonText.layout" {
+           Name "Button[1,1]"
+           Slot GridWidgetSlot "{64AE3B3B66D17830}" {
+            Row 1
+            Column 1
+           }
+           components {
+            SCR_ButtonTextComponent "{5548F0143AE99095}" {
+            }
+           }
+          }
+          ButtonWidgetClass "{64AE3B3AECAD9ABB}" : "{75C912A1C89BE6C2}UI/layouts/WidgetLibrary/Buttons/WLib_ButtonText.layout" {
+           Name "Button[1,2]"
+           Slot GridWidgetSlot "{64AE3B3B66D17830}" {
+            Row 1
+            Column 2
+           }
+           components {
+            SCR_ButtonTextComponent "{5548F0143AE99095}" {
+            }
+           }
+          }
+          ButtonWidgetClass "{64AE3B3AE1598695}" : "{75C912A1C89BE6C2}UI/layouts/WidgetLibrary/Buttons/WLib_ButtonText.layout" {
+           Name "Button[1,3]"
+           Slot GridWidgetSlot "{64AE3B3B66D17830}" {
+            Row 1
+            Column 3
+           }
+           components {
+            SCR_ButtonTextComponent "{5548F0143AE99095}" {
+            }
+           }
+          }
+          ButtonWidgetClass "{64AE3B3AFFF5F70B}" : "{75C912A1C89BE6C2}UI/layouts/WidgetLibrary/Buttons/WLib_ButtonText.layout" {
+           Name "Button[2,0]"
+           Slot GridWidgetSlot "{64AE3B3B66D17830}" {
+            Row 2
+           }
+           components {
+            SCR_ButtonTextComponent "{5548F0143AE99095}" {
+            }
+           }
+           {
+            SizeLayoutWidgetClass "{5548EB41A8E48247}" {
+             Prefab "{5548EB41A8E48247}"
+             HeightOverride 25
+            }
+           }
+          }
+          ButtonWidgetClass "{64AE3B3AF78F8A3D}" : "{75C912A1C89BE6C2}UI/layouts/WidgetLibrary/Buttons/WLib_ButtonText.layout" {
+           Name "Button[2,1]"
+           Slot GridWidgetSlot "{64AE3B3B66D17830}" {
+            Row 2
+            Column 1
+           }
+           components {
+            SCR_ButtonTextComponent "{5548F0143AE99095}" {
+            }
+           }
+          }
+          ButtonWidgetClass "{64AE3B3ACBCC125F}" : "{75C912A1C89BE6C2}UI/layouts/WidgetLibrary/Buttons/WLib_ButtonText.layout" {
+           Name "Button[2,2]"
+           Slot GridWidgetSlot "{64AE3B3B66D17830}" {
+            Row 2
+            Column 2
+           }
+           components {
+            SCR_ButtonTextComponent "{5548F0143AE99095}" {
+            }
+           }
+          }
+          ButtonWidgetClass "{64AE3B3AC0179B3B}" : "{75C912A1C89BE6C2}UI/layouts/WidgetLibrary/Buttons/WLib_ButtonText.layout" {
+           Name "Button[2,3]"
+           Slot GridWidgetSlot "{64AE3B3B66D17830}" {
+            Row 2
+            Column 3
+           }
+           components {
+            SCR_ButtonTextComponent "{5548F0143AE99095}" {
+            }
+           }
+          }
+          ButtonWidgetClass "{64AE3B3AC55443C7}" : "{75C912A1C89BE6C2}UI/layouts/WidgetLibrary/Buttons/WLib_ButtonText.layout" {
+           Name "Button[3,0]"
+           Slot GridWidgetSlot "{64AE3B3B66D17830}" {
+            Row 3
+           }
+           components {
+            SCR_ButtonTextComponent "{5548F0143AE99095}" {
+            }
+           }
+           {
+            SizeLayoutWidgetClass "{5548EB41A8E48247}" {
+             Prefab "{5548EB41A8E48247}"
+             HeightOverride 25
+            }
+           }
+          }
+          ButtonWidgetClass "{64AE3B3ADED49038}" : "{75C912A1C89BE6C2}UI/layouts/WidgetLibrary/Buttons/WLib_ButtonText.layout" {
+           Name "Button[3,1]"
+           Slot GridWidgetSlot "{64AE3B3B66D17830}" {
+            Row 3
+            Column 1
+           }
+           components {
+            SCR_ButtonTextComponent "{5548F0143AE99095}" {
+            }
+           }
+          }
+          ButtonWidgetClass "{64AE3B3AD2E256B0}" : "{75C912A1C89BE6C2}UI/layouts/WidgetLibrary/Buttons/WLib_ButtonText.layout" {
+           Name "Button[3,2]"
+           Slot GridWidgetSlot "{64AE3B3B66D17830}" {
+            Row 3
+            Column 2
+           }
+           components {
+            SCR_ButtonTextComponent "{5548F0143AE99095}" {
+            }
+           }
+          }
+          ButtonWidgetClass "{64AE3B3AD7CD0100}" : "{75C912A1C89BE6C2}UI/layouts/WidgetLibrary/Buttons/WLib_ButtonText.layout" {
+           Name "Button[3,3]"
+           Slot GridWidgetSlot "{64AE3B3B66D17830}" {
+            Row 3
+            Column 3
+           }
+           components {
+            SCR_ButtonTextComponent "{5548F0143AE99095}" {
+            }
+           }
+          }
+          ButtonWidgetClass "{64AE3B3A9CF7DF9D}" : "{75C912A1C89BE6C2}UI/layouts/WidgetLibrary/Buttons/WLib_ButtonText.layout" {
+           Name "Button[4,0]"
+           Slot GridWidgetSlot "{64AE3B3B66D17830}" {
+            Row 4
+           }
+           components {
+            SCR_ButtonTextComponent "{5548F0143AE99095}" {
+            }
+           }
+           {
+            SizeLayoutWidgetClass "{5548EB41A8E48247}" {
+             Prefab "{5548EB41A8E48247}"
+             HeightOverride 25
+            }
+           }
+          }
+          ButtonWidgetClass "{64AE3B3A953510DB}" : "{75C912A1C89BE6C2}UI/layouts/WidgetLibrary/Buttons/WLib_ButtonText.layout" {
+           Name "Button[4,1]"
+           Slot GridWidgetSlot "{64AE3B3B66D17830}" {
+            Row 4
+            Column 1
+           }
+           components {
+            SCR_ButtonTextComponent "{5548F0143AE99095}" {
+            }
+           }
+          }
+          ButtonWidgetClass "{64AE3B3A65192C90}" : "{75C912A1C89BE6C2}UI/layouts/WidgetLibrary/Buttons/WLib_ButtonText.layout" {
+           Name "Button[4,2]"
+           Slot GridWidgetSlot "{64AE3B3B66D17830}" {
+            Row 4
+            Column 2
+           }
+           components {
+            SCR_ButtonTextComponent "{5548F0143AE99095}" {
+            }
+           }
+          }
+          ButtonWidgetClass "{64AE3B3A7A17965C}" : "{75C912A1C89BE6C2}UI/layouts/WidgetLibrary/Buttons/WLib_ButtonText.layout" {
+           Name "Button[4,3]"
+           Slot GridWidgetSlot "{64AE3B3B66D17830}" {
+            Row 4
+            Column 3
+           }
+           components {
+            SCR_ButtonTextComponent "{5548F0143AE99095}" {
+            }
+           }
+          }
+          ButtonWidgetClass "{64AE3B3A700417EE}" : "{75C912A1C89BE6C2}UI/layouts/WidgetLibrary/Buttons/WLib_ButtonText.layout" {
+           Name "Button[5,0]"
+           Slot GridWidgetSlot "{64AE3B3B66D17830}" {
+            Row 5
+           }
+           components {
+            SCR_ButtonTextComponent "{5548F0143AE99095}" {
+            }
+           }
+           {
+            SizeLayoutWidgetClass "{5548EB41A8E48247}" {
+             Prefab "{5548EB41A8E48247}"
+             HeightOverride 25
+            }
+           }
+          }
+          ButtonWidgetClass "{64AE3B3A765E3E0E}" : "{75C912A1C89BE6C2}UI/layouts/WidgetLibrary/Buttons/WLib_ButtonText.layout" {
+           Name "Button[5,1]"
+           Slot GridWidgetSlot "{64AE3B3B66D17830}" {
+            Row 5
+            Column 1
+           }
+           components {
+            SCR_ButtonTextComponent "{5548F0143AE99095}" {
+            }
+           }
+          }
+          ButtonWidgetClass "{64AE3B3A49F03DEF}" : "{75C912A1C89BE6C2}UI/layouts/WidgetLibrary/Buttons/WLib_ButtonText.layout" {
+           Name "Button[5,2]"
+           Slot GridWidgetSlot "{64AE3B3B66D17830}" {
+            Row 5
+            Column 2
+           }
+           components {
+            SCR_ButtonTextComponent "{5548F0143AE99095}" {
+            }
+           }
+          }
+          ButtonWidgetClass "{64AE3B3A4E344A47}" : "{75C912A1C89BE6C2}UI/layouts/WidgetLibrary/Buttons/WLib_ButtonText.layout" {
+           Name "Button[5,3]"
+           Slot GridWidgetSlot "{64AE3B3B66D17830}" {
+            Row 5
+            Column 3
+           }
+           components {
+            SCR_ButtonTextComponent "{5548F0143AE99095}" {
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+      ImageWidgetClass "{64AE3B2438DD1DC0}" {
+       Name "LineBreak3"
+       Slot LayoutSlot "{64AE3B244E9A3EEB}" {
+        Padding 0 2 0 0
+       }
+       Size 320 2
+      }
+      SizeLayoutWidgetClass "{64AE3B25BE335B47}" {
+       Name "BottomBar"
+       Slot LayoutSlot "{64AE3B25BE335BA0}" {
+        Padding 0 2 0 0
+       }
+       AllowWidthOverride 1
+       WidthOverride 320
+       AllowHeightOverride 1
+       HeightOverride 85
+      }
+     }
+    }
+   }
+  }
+ }
+}

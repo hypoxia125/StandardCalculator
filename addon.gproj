@@ -1,0 +1,8 @@
+GameProject {
+ ID "StandardCalculator"
+ GUID "64AB1CD98C9BCFF4"
+ TITLE "StandardCalculator"
+ Dependencies {
+  "58D0FB3206B6F859"
+ }
+}
