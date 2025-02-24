@@ -48,7 +48,7 @@ class SCALC_CalculatorButtonTextComponent : SCR_ButtonTextComponent
 			return false;
 		
 		bool isNumberInput = IsNumberInput(w);
-		bool isOperatorInput = isOperatorInput(w);
+		bool isOperatorInput = IsOperationInput(w);
 		
 		return true;
 	}
