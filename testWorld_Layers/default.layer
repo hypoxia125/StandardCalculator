@@ -1,0 +1,18 @@
+GenericEntity : "{EC13D4E934B2ADD8}Prefabs/Items/Demining/MineFlags/MineFlag_US.et" {
+ components {
+  ActionsManagerComponent "{508AB5952B584B2E}" {
+   additionalActions {
+    SCALC_OpenCalculator "{64B045346E3F1CAF}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{64B0453461CF3CB8}" {
+      Name "Open Calculator"
+     }
+     Duration 1
+    }
+   }
+  }
+ }
+ coords 2723.885 74.519 2012.785
+}

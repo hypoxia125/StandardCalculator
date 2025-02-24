@@ -1,0 +1,586 @@
+FrameWidgetClass {
+ Name "rootFrame"
+ {
+  ImageWidgetClass "{64AF393756D94CD2}" {
+   Name "Image0"
+   Slot FrameWidgetSlot "{64AF393756D94D3A}" {
+    OffsetLeft 0
+    OffsetTop 0
+    SizeX 320
+    OffsetRight -320
+    SizeY 510
+    OffsetBottom -510
+   }
+   Color 0.034 0.034 0.034 1
+  }
+  VerticalLayoutWidgetClass "{64AF39303F08B23C}" {
+   Name "VerticalLayout0"
+   Slot FrameWidgetSlot "{64AF39303F08B21C}" {
+    OffsetLeft 0
+    OffsetTop 0
+    SizeX 320
+    OffsetRight -320
+    SizeY 510
+    OffsetBottom -510
+   }
+   {
+    SizeLayoutWidgetClass "{64AF39300ABD9A77}" {
+     Name "SizeLayout0"
+     Slot LayoutSlot "{64AF39300ABD9A57}" {
+     }
+     {
+      OverlayWidgetClass "{64AF3937CE427F6A}" {
+       Name "Overlay0"
+       Slot AlignableSlot "{64AF3937CE427F71}" {
+       }
+       {
+        ImageWidgetClass "{64AF3937C0F235B0}" {
+         Name "Image0"
+         Slot OverlayWidgetSlot "{64AF3937C0F23591}" {
+         }
+         Color 0.252 0.185 0 1
+         Size 320 32
+        }
+        TextWidgetClass "{64AF3937C3E28EDD}" {
+         Name "Text0"
+         Slot OverlayWidgetSlot "{64AF3937C3E28F24}" {
+         }
+         Text "Calculator"
+         FontProperties FontProperties "{64AF393785DCD9D6}" {
+          OutlineSize 2
+         }
+        }
+       }
+      }
+     }
+    }
+    SizeLayoutWidgetClass "{64AF393740030DC3}" {
+     Name "Linebreak"
+     Slot LayoutSlot "{64AF393740030E2B}" {
+     }
+     WidthOverride 320
+     HeightOverride 5
+     {
+      ImageWidgetClass "{64AF3936EABBC0E6}" {
+       Name "Image0"
+       Slot AlignableSlot "{64AF3936EABBC0C2}" {
+       }
+       Size 320 2
+      }
+     }
+    }
+    SizeLayoutWidgetClass "{64AF730DEBAE55EC}" {
+     Name "SizeLayout1"
+     Slot LayoutSlot "{64AF730DEBAE55CA}" {
+      Padding 0 2 0 0
+     }
+     AllowWidthOverride 1
+     WidthOverride 320
+     AllowHeightOverride 1
+     HeightOverride 100
+     {
+      TextWidgetClass "{64AF730DF41DB033}" {
+       Name "Output"
+       Slot AlignableSlot "{64AF730DF41DB019}" {
+        HorizontalAlign 2
+        Padding 10 0 10 0
+       }
+       Text "Output"
+      }
+     }
+    }
+    SizeLayoutWidgetClass "{64AF730DB8C03261}" {
+     Name "Linebreak0"
+     Slot LayoutSlot "{64AF393740030E2B}" {
+     }
+     WidthOverride 320
+     HeightOverride 5
+     {
+      ImageWidgetClass "{64AF730DB8C03260}" {
+       Name "Image0"
+       Slot AlignableSlot "{64AF3936EABBC0C2}" {
+       }
+       Size 320 2
+      }
+     }
+    }
+    SizeLayoutWidgetClass "{64AF730DB1ED2E5C}" {
+     Name "SizeLayout2"
+     Slot LayoutSlot "{64AF730DB1ED2EB8}" {
+      Padding 10 2 10 0
+     }
+     AllowWidthOverride 1
+     WidthOverride 300
+     AllowHeightOverride 1
+     HeightOverride 50
+     {
+      HorizontalLayoutWidgetClass "{64AF730D690BA3C7}" {
+       Name "HorizontalLayout0"
+       Slot AlignableSlot "{64AF730D690BDC2F}" {
+       }
+       {
+        ButtonWidgetClass "{64AF730D4C6BA144}" : "{75C912A1C89BE6C2}UI/layouts/WidgetLibrary/Buttons/WLib_ButtonText.layout" {
+         Name "MC"
+         Slot LayoutSlot "{64AF730D4C6BA155}" {
+          SizeMode Fill
+          FillWeight 1
+         }
+         Tooltip TextWidgetTooltip "{64AF730D1972938D}" {
+          Text "Memory Clear"
+         }
+         components {
+          SCR_ButtonTextComponent "{5548F0143AE99095}" {
+           m_BackgroundDefault 0.034 0.034 0.034 1
+           m_sText "MC"
+          }
+         }
+         {
+          SizeLayoutWidgetClass "{5548EB41A8E48247}" {
+           Prefab "{5548EB41A8E48247}"
+           AllowWidthOverride 1
+           WidthOverride 64
+          }
+         }
+        }
+        ButtonWidgetClass "{64AF730D58CC843E}" : "{75C912A1C89BE6C2}UI/layouts/WidgetLibrary/Buttons/WLib_ButtonText.layout" {
+         Name "MR"
+         Slot LayoutSlot "{64AF730D4C6BA155}" {
+          SizeMode Fill
+         }
+         components {
+          SCR_ButtonTextComponent "{5548F0143AE99095}" {
+           m_BackgroundDefault 0.034 0.034 0.034 1
+           m_sText "MR"
+          }
+         }
+         {
+          SizeLayoutWidgetClass "{5548EB41A8E48247}" {
+           Prefab "{5548EB41A8E48247}"
+           AllowWidthOverride 1
+           WidthOverride 64
+          }
+         }
+        }
+        ButtonWidgetClass "{64AF730D5F49CB57}" : "{75C912A1C89BE6C2}UI/layouts/WidgetLibrary/Buttons/WLib_ButtonText.layout" {
+         Name "M+"
+         Slot LayoutSlot "{64AF730D4C6BA155}" {
+          SizeMode Fill
+         }
+         components {
+          SCR_ButtonTextComponent "{5548F0143AE99095}" {
+           m_BackgroundDefault 0.034 0.034 0.034 1
+           m_sText "M+"
+          }
+         }
+         {
+          SizeLayoutWidgetClass "{5548EB41A8E48247}" {
+           Prefab "{5548EB41A8E48247}"
+           AllowWidthOverride 1
+           WidthOverride 64
+          }
+         }
+        }
+        ButtonWidgetClass "{64AF730D54373454}" : "{75C912A1C89BE6C2}UI/layouts/WidgetLibrary/Buttons/WLib_ButtonText.layout" {
+         Name "M-"
+         Slot LayoutSlot "{64AF730D4C6BA155}" {
+          SizeMode Fill
+         }
+         components {
+          SCR_ButtonTextComponent "{5548F0143AE99095}" {
+           m_BackgroundDefault 0.034 0.034 0.034 1
+           m_sText "M-"
+          }
+         }
+         {
+          SizeLayoutWidgetClass "{5548EB41A8E48247}" {
+           Prefab "{5548EB41A8E48247}"
+           AllowWidthOverride 1
+           WidthOverride 64
+          }
+         }
+        }
+        ButtonWidgetClass "{64AF730D2A0942CF}" : "{75C912A1C89BE6C2}UI/layouts/WidgetLibrary/Buttons/WLib_ButtonText.layout" {
+         Name "MS"
+         Slot LayoutSlot "{64AF730D4C6BA155}" {
+          SizeMode Fill
+         }
+         components {
+          SCR_ButtonTextComponent "{5548F0143AE99095}" {
+           m_BackgroundDefault 0.034 0.034 0.034 1
+           m_sText "MS"
+          }
+         }
+         {
+          SizeLayoutWidgetClass "{5548EB41A8E48247}" {
+           Prefab "{5548EB41A8E48247}"
+           AllowWidthOverride 1
+           WidthOverride 64
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+    SizeLayoutWidgetClass "{64AF730DB46E3DBD}" {
+     Name "Linebreak1"
+     Slot LayoutSlot "{64AF393740030E2B}" {
+     }
+     WidthOverride 320
+     HeightOverride 5
+     {
+      ImageWidgetClass "{64AF730DB46E3DBC}" {
+       Name "Image0"
+       Slot AlignableSlot "{64AF3936EABBC0C2}" {
+       }
+       Size 320 2
+      }
+     }
+    }
+    SizeLayoutWidgetClass "{64AF730E8974F951}" {
+     Name "SizeLayout3"
+     Slot LayoutSlot "{64AF730DB1ED2EB8}" {
+      Padding 10 10 10 0
+     }
+     AllowWidthOverride 1
+     WidthOverride 300
+     AllowHeightOverride 1
+     HeightOverride 252
+     {
+      GridLayoutWidgetClass "{64AF730FECCDEBE3}" {
+       Name "GridLayout0"
+       Slot AlignableSlot "{64AF730FECCDEBCA}" {
+       }
+       RowFill {
+        0 0 0 0 0 0
+       }
+       ColumnFill {
+        0 0 0 0
+       }
+       {
+        ButtonWidgetClass "{64B04A9EFF73747D}" : "{1B7B09255902D19B}SCALC_CalcButton.layout" {
+         Name "Button[0,0]"
+         Slot GridWidgetSlot "{64AF732D9664884C}" {
+         }
+         components {
+          SCALC_CalculatorButtonTextComponent "{64B04534D11D72CC}" {
+           m_sText "Mod"
+           _calculatorButtonValue "Mod"
+          }
+         }
+        }
+        ButtonWidgetClass "{64B04A9EC992932E}" : "{1B7B09255902D19B}SCALC_CalcButton.layout" {
+         Name "Button[0,1]"
+         Slot GridWidgetSlot "{64AF732D9664884C}" {
+          Column 1
+         }
+         components {
+          SCALC_CalculatorButtonTextComponent "{64B04534D11D72CC}" {
+           m_sText "CE"
+           _calculatorButtonValue "CE"
+          }
+         }
+        }
+        ButtonWidgetClass "{64B04A9EC16D4DB0}" : "{1B7B09255902D19B}SCALC_CalcButton.layout" {
+         Name "Button[0,2]"
+         Slot GridWidgetSlot "{64AF732D9664884C}" {
+          Column 2
+         }
+         components {
+          SCALC_CalculatorButtonTextComponent "{64B04534D11D72CC}" {
+           m_sText "C"
+           _calculatorButtonValue "C"
+          }
+         }
+        }
+        ButtonWidgetClass "{64B04A9D0F6621A7}" : "{1B7B09255902D19B}SCALC_CalcButton.layout" {
+         Name "Button[0,3]"
+         Slot GridWidgetSlot "{64AF732D9664884C}" {
+          Column 3
+         }
+         components {
+          SCALC_CalculatorButtonTextComponent "{64B04534D11D72CC}" {
+           m_sText "Back"
+           _calculatorButtonValue "Backspace"
+          }
+         }
+        }
+        ButtonWidgetClass "{64B04A9EE225E89A}" : "{1B7B09255902D19B}SCALC_CalcButton.layout" {
+         Name "Button[1,0]"
+         Slot GridWidgetSlot "{64AF732D9664884C}" {
+          Row 1
+         }
+         components {
+          SCALC_CalculatorButtonTextComponent "{64B04534D11D72CC}" {
+           m_sText "1/x"
+           _calculatorButtonValue "Reciprocal"
+          }
+         }
+        }
+        ButtonWidgetClass "{64B04A9D168A55DE}" : "{1B7B09255902D19B}SCALC_CalcButton.layout" {
+         Name "Button[1,1]"
+         Slot GridWidgetSlot "{64AF732D9664884C}" {
+          Row 1
+          Column 1
+         }
+         components {
+          SCALC_CalculatorButtonTextComponent "{64B04534D11D72CC}" {
+           m_sText "x^2"
+           _calculatorButtonValue "Square"
+          }
+         }
+        }
+        ButtonWidgetClass "{64B04A9D1AC3171B}" : "{1B7B09255902D19B}SCALC_CalcButton.layout" {
+         Name "Button[1,2]"
+         Slot GridWidgetSlot "{64AF732D9664884C}" {
+          Row 1
+          Column 2
+         }
+         components {
+          SCALC_CalculatorButtonTextComponent "{64B04534D11D72CC}" {
+           m_sText "Sqrt"
+           _calculatorButtonValue "Sqrt"
+          }
+         }
+        }
+        ButtonWidgetClass "{64B04A9D364456DF}" : "{1B7B09255902D19B}SCALC_CalcButton.layout" {
+         Name "Button[1,3]"
+         Slot GridWidgetSlot "{64AF732D9664884C}" {
+          Row 1
+          Column 3
+         }
+         components {
+          SCALC_CalculatorButtonTextComponent "{64B04534D11D72CC}" {
+           m_sText "/"
+           _calculatorButtonValue "Divide"
+          }
+         }
+        }
+        ButtonWidgetClass "{64B04A9D76CA727B}" : "{1B7B09255902D19B}SCALC_CalcButton.layout" {
+         Name "Button[2,0]"
+         Slot GridWidgetSlot "{64AF732D9664884C}" {
+          Row 2
+         }
+         components {
+          SCALC_CalculatorButtonTextComponent "{64B04534D11D72CC}" {
+           m_sText "7"
+           _calculatorButtonValue "Seven"
+          }
+         }
+        }
+        ButtonWidgetClass "{64B04A9D7062930C}" : "{1B7B09255902D19B}SCALC_CalcButton.layout" {
+         Name "Button[2,1]"
+         Slot GridWidgetSlot "{64AF732D9664884C}" {
+          Row 2
+          Column 1
+         }
+         components {
+          SCALC_CalculatorButtonTextComponent "{64B04534D11D72CC}" {
+           m_sText "8"
+           _calculatorButtonValue "Eight"
+          }
+         }
+        }
+        ButtonWidgetClass "{64B04A9D4C4A33B7}" : "{1B7B09255902D19B}SCALC_CalcButton.layout" {
+         Name "Button[2,2]"
+         Slot GridWidgetSlot "{64AF732D9664884C}" {
+          Row 2
+          Column 2
+         }
+         components {
+          SCALC_CalculatorButtonTextComponent "{64B04534D11D72CC}" {
+           m_sText "9"
+           _calculatorButtonValue "Nine"
+          }
+         }
+        }
+        ButtonWidgetClass "{64B04A9D38E67885}" : "{1B7B09255902D19B}SCALC_CalcButton.layout" {
+         Name "Button[2,3]"
+         Slot GridWidgetSlot "{64AF732D9664884C}" {
+          Row 2
+          Column 3
+         }
+         components {
+          SCALC_CalculatorButtonTextComponent "{64B04534D11D72CC}" {
+           m_sText "x"
+           _calculatorButtonValue "Multiply"
+          }
+         }
+        }
+        ButtonWidgetClass "{64B04A9D6C2D6B4A}" : "{1B7B09255902D19B}SCALC_CalcButton.layout" {
+         Name "Button[3,0]"
+         Slot GridWidgetSlot "{64AF732D9664884C}" {
+          Row 3
+         }
+         components {
+          SCALC_CalculatorButtonTextComponent "{64B04534D11D72CC}" {
+           m_sText "4"
+           _calculatorButtonValue "Four"
+          }
+         }
+        }
+        ButtonWidgetClass "{64B04A9D65006EAD}" : "{1B7B09255902D19B}SCALC_CalcButton.layout" {
+         Name "Button[3,1]"
+         Slot GridWidgetSlot "{64AF732D9664884C}" {
+          Row 3
+          Column 1
+         }
+         components {
+          SCALC_CalculatorButtonTextComponent "{64B04534D11D72CC}" {
+           m_sText "5"
+           _calculatorButtonValue "Five"
+          }
+         }
+        }
+        ButtonWidgetClass "{64B04A9D7979E953}" : "{1B7B09255902D19B}SCALC_CalcButton.layout" {
+         Name "Button[3,2]"
+         Slot GridWidgetSlot "{64AF732D9664884C}" {
+          Row 3
+          Column 2
+         }
+         components {
+          SCALC_CalculatorButtonTextComponent "{64B04534D11D72CC}" {
+           m_sText "6"
+           _calculatorButtonValue "Six"
+          }
+         }
+        }
+        ButtonWidgetClass "{64B04A9D2E3A46C2}" : "{1B7B09255902D19B}SCALC_CalcButton.layout" {
+         Name "Button[3,3]"
+         Slot GridWidgetSlot "{64AF732D9664884C}" {
+          Row 3
+          Column 3
+         }
+         components {
+          SCALC_CalculatorButtonTextComponent "{64B04534D11D72CC}" {
+           m_sText "-"
+           _calculatorButtonValue "Subtract"
+          }
+         }
+        }
+        ButtonWidgetClass "{64B04A9DB9C843E1}" : "{1B7B09255902D19B}SCALC_CalcButton.layout" {
+         Name "Button[4,0]"
+         Slot GridWidgetSlot "{64AF732D9664884C}" {
+          Row 4
+         }
+         components {
+          SCALC_CalculatorButtonTextComponent "{64B04534D11D72CC}" {
+           m_sText "1"
+           _calculatorButtonValue "One"
+          }
+         }
+        }
+        ButtonWidgetClass "{64B04A9D9F8A4B68}" : "{1B7B09255902D19B}SCALC_CalcButton.layout" {
+         Name "Button[4,1]"
+         Slot GridWidgetSlot "{64AF732D9664884C}" {
+          Row 4
+          Column 1
+         }
+         components {
+          SCALC_CalculatorButtonTextComponent "{64B04534D11D72CC}" {
+           m_sText "2"
+           _calculatorButtonValue "Two"
+          }
+         }
+        }
+        ButtonWidgetClass "{64B04A9D968DEE31}" : "{1B7B09255902D19B}SCALC_CalcButton.layout" {
+         Name "Button[4,2]"
+         Slot GridWidgetSlot "{64AF732D9664884C}" {
+          Row 4
+          Column 2
+         }
+         components {
+          SCALC_CalculatorButtonTextComponent "{64B04534D11D72CC}" {
+           m_sText "3"
+           _calculatorButtonValue "Three"
+          }
+         }
+        }
+        ButtonWidgetClass "{64B04A9D5952F92F}" : "{1B7B09255902D19B}SCALC_CalcButton.layout" {
+         Name "Button[4,3]"
+         Slot GridWidgetSlot "{64AF732D9664884C}" {
+          Row 4
+          Column 3
+         }
+         components {
+          SCALC_CalculatorButtonTextComponent "{64B04534D11D72CC}" {
+           m_sText "+"
+           _calculatorButtonValue "Divide"
+          }
+         }
+        }
+        ButtonWidgetClass "{64B04A9ED89BA7E9}" : "{1B7B09255902D19B}SCALC_CalcButton.layout" {
+         Name "Button[5,0]"
+         Slot GridWidgetSlot "{64AF732D9664884C}" {
+          Row 5
+         }
+         components {
+          SCALC_CalculatorButtonTextComponent "{64B04534D11D72CC}" {
+           m_sText "+/-"
+           _calculatorButtonValue "Negation"
+          }
+         }
+        }
+        ButtonWidgetClass "{64B04534B7CE31D9}" : "{1B7B09255902D19B}SCALC_CalcButton.layout" {
+         Name "Button[5,1]"
+         Slot GridWidgetSlot "{64AF732D9664884C}" {
+          Row 5
+          Column 1
+         }
+         components {
+          SCALC_CalculatorButtonTextComponent "{64B04534D11D72CC}" {
+           m_sText "0"
+           _calculatorButtonValue "Zero"
+          }
+         }
+        }
+        ButtonWidgetClass "{64B04A9ED4DABFC6}" : "{1B7B09255902D19B}SCALC_CalcButton.layout" {
+         Name "Button[5,2]"
+         Slot GridWidgetSlot "{64AF732D9664884C}" {
+          Row 5
+          Column 2
+         }
+         components {
+          SCALC_CalculatorButtonTextComponent "{64B04534D11D72CC}" {
+           m_sText "."
+           _calculatorButtonValue "Decimal"
+          }
+         }
+        }
+        ButtonWidgetClass "{64B04A9EADB41672}" : "{1B7B09255902D19B}SCALC_CalcButton.layout" {
+         Name "Button[5,3]"
+         Slot GridWidgetSlot "{64AF732D9664884C}" {
+          Row 5
+          Column 3
+         }
+         components {
+          SCALC_CalculatorButtonTextComponent "{64B04534D11D72CC}" {
+           m_sText "="
+           _calculatorButtonValue "Equals"
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+    SizeLayoutWidgetClass "{64AF730AD08BAF62}" {
+     Name "Linebreak2"
+     Slot LayoutSlot "{64AF393740030E2B}" {
+      Padding 0 10 0 0
+     }
+     WidthOverride 320
+     HeightOverride 5
+     {
+      ImageWidgetClass "{64AF730AD08BAF61}" {
+       Name "Image0"
+       Slot AlignableSlot "{64AF3936EABBC0C2}" {
+       }
+       Size 320 2
+      }
+     }
+    }
+   }
+  }
+ }
+}

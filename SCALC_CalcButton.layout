@@ -1,0 +1,67 @@
+ButtonWidgetClass {
+ Name "CalcButton"
+ Slot GridWidgetSlot "{64AF732D9664884C}" {
+ }
+ components {
+  SCALC_CalculatorButtonTextComponent "{64B04534D11D72CC}" {
+   m_BackgroundDefault 0.034 0.034 0.034 1
+   m_sText "Calc Button"
+  }
+ }
+ {
+  SizeLayoutWidgetClass "{64AF732E9EB638B0}" {
+   Name "SizeLayout"
+   Slot ButtonWidgetSlot "{64AF7326F58174A8}" {
+    HorizontalAlign 3
+    VerticalAlign 3
+   }
+   AllowWidthOverride 1
+   WidthOverride 75
+   AllowHeightOverride 1
+   HeightOverride 42
+   {
+    OverlayWidgetClass "{64AF732E68D02F21}" {
+     Name "Overlay"
+     Slot AlignableSlot "{64AF732E68D02FA3}" {
+      HorizontalAlign 3
+      VerticalAlign 3
+      Padding 2 2 2 2
+     }
+     {
+      ImageWidgetClass "{64AF732E67F38FC3}" {
+       Name "Background"
+       Slot OverlayWidgetSlot "{64AF7326F58174E7}" {
+        HorizontalAlign 3
+        VerticalAlign 3
+       }
+      }
+      PanelWidgetClass "{64AF732E67F38824}" {
+       Name "Border"
+       Slot OverlayWidgetSlot "{64AF7326F58174CF}" {
+        HorizontalAlign 3
+        VerticalAlign 3
+        Padding -2 -2 -2 -2
+       }
+       Clipping False
+       Color 0.761 0.386 0.078 1
+       style outline_2px
+      }
+      TextWidgetClass "{64AF732E67F3880F}" {
+       Name "Text"
+       Slot OverlayWidgetSlot "{64AF7326F5817531}" {
+       }
+       Clipping Ancestor
+       Text "Interactive"
+       "Font Size" 20
+       "Min Font Size" 20
+       FontProperties FontProperties "{64AF732E0AC2F442}" {
+        Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+        ShadowOffset 0 0
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}
